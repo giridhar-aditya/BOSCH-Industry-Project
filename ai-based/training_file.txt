@@ -1,0 +1,2 @@
+Training file "Training1_24.pth" is present in google drive
+use your own pth file if present

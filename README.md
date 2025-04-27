@@ -26,36 +26,23 @@ The solution targets automated, reliable, and scalable migration of industrial C
   - Memory management constructs (`new`, `delete`)
 - Focuses on fast, deterministic conversion for well-understood patterns.
 
-## Project Structure
-```
-cpp-to-rust-converter/
-├── ai_model/
-│   ├── SASTRA_Code_Converter_DL.py  # Custom Transformer model code
-├── rule_based/
-│   ├── sastra.py                    # Regex and pattern-matching converter
-├── dataset/                         # Parallel C++ and Rust datasets
-├── examples/                        # Example input and output files
-├── README.md                        # Project description (this file)
-└── requirements.txt                 # Python libraries needed
-```
-
 ## How to Run
 
 ### Rule-Based Conversion
 ```bash
-cd rule_based
-python sastra.py input.cpp output.rs
+cd rule-based
+python main.py
 ```
 
 ### AI-Based Conversion
 Train the model:
 ```bash
-cd ai_model
+cd ai-model
 python SASTRA_Code_Converter_DL.py
 ```
 Use the trained model for translation (custom inference script required).
 
-*Detailed steps for training, validation, and inference are documented inside the `ai_model/` folder.*
+*Detailed steps for training, validation, and inference are documented inside the `ai-model/` folder.*
 
 ## Technologies Used
 - **Python**
@@ -66,6 +53,3 @@ Use the trained model for translation (custom inference script required).
 
 ## Contributions
 This project is part of an academic-industry collaboration with **BOSCH Global Software Technologies**, addressing the growing need for **automated legacy code migration** from C++ to Rust in critical software systems.
-
-## License
-Proprietary — © 2025 BOSCH and **SASTRA University**.

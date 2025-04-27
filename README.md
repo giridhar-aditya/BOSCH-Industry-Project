@@ -37,7 +37,7 @@ python main.py
 ### AI-Based Conversion
 Train the model:
 ```bash
-cd ai-model
+cd ai-based
 python SASTRA_Code_Converter_DL.py
 ```
 Use the trained model for translation (custom inference script required).
